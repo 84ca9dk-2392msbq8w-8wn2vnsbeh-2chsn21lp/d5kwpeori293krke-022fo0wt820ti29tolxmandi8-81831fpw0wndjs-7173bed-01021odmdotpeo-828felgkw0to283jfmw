@@ -36,14 +36,8 @@ netsh advfirewall reset
 nbtstat -r
 nbtstat -rr
 
-del /f /s /q %systemdrive%\*.tmp
-del /f /s /q %systemdrive%\*._mp
-del /f /s /q %systemdrive%\*.log
-del /f /s /q %systemdrive%\*.gid
-del /f /s /q %systemdrive%\*.chk
-del /f /s /q %systemdrive%\*.old
+
 del /f /s /q %systemdrive%\recycled\*.*
-del /f /s /q %windir%\*.bak
 del /f /s /q %windir%\prefetch\*.*
 del /f /q %userprofile%\cookies\*.*
 del /f /q %userprofile%\recent\*.*
@@ -74,7 +68,6 @@ echo of |clip
 rd /q /s c:\$Recycle.Bin
 CLEANMGR /sagerun:
 rd /q /s d:\$Recycle.Bin
-del *.log /a /s /q /f
 del /s /f /q C:\ProgramData\Tencent
 del /s /f /q c:\Windows\Prefetch
 del /s /f /q C:\aow_drv.log
